@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='./CSS/style.css'>
+    </head>
+    <body>
+    <div class="container">
+        <header>
+            <img src="asset/images/su_banner.gif" alt="banner">
+            <nav id="main-nav">
+                <ul>
+                    <li><a href = index.html> Home </a> </li>
+                    <li><a href = about.html> About </a> </li>
+                    <li><a href = services.html> Our service </a> </li>
+                    <li><a href = contact.html> Contact us </a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="/action_page.php">
+        <fieldset>
+            <legend>Personal information:</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id ="fname"value="">
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id ="lname"value="">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id ="email" name="email">
+            <br><br>
+            <p> Please select the music genre that you like:</p>
+            <input type="checkbox" id ="classic" name="classic" value="Classic">
+            <label for="classic">Classic</label>
+            <br>
+            <input type="checkbox" id ="Jazz" name="Jazz" value="Jazz">
+            <label for="Jazz">Jazz</label>
+            <br>
+            <input type="checkbox" id ="Blues" name="Blues" value="Blues">
+            <label for="Blues">Blues</label>
+            <br>
+            <input type="checkbox" id ="Instrumental" name="Instrumental" value="Instrumental">
+            <label for="Instrumental">Instrumental</label>
+        </fieldset>
+            <fieldset>
+                <label for="tâche-select">How did you hear about us?</label>
+
+                <select name="tâche" id="tâche-select">
+                    <option value="Our website">Our website</option>
+                    <option value="Friends">Friends</option>
+                    <option value="TV Adv">TV Adv</option>
+                    <option value="Other">Other</option>
+                </select>
+                <p> would you recommend us to you friends?<br>
+                <input type="radio" name="demand"> <label for="yes"> yes</label>
+                <input type="radio" name="demand"> <label for="no"> no</label>
+                <input type="radio" name="demand"> <label for="maybe"> maybe</label></p>
+                <form method="post" action="traitement.php">
+                    <p>
+                        <textarea name="ameliorer" id="ameliorer"></textarea>
+                    </p>
+                </form>
+                <input type="checkbox" id="Type1" name="Type1" value="Classic" checked>
+                <label for="Type">Sign me up for email updates</label><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.865997124276!2d-79.39194918437191!3d43.67175667912071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sfr!2sca!4v1663703347145!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer>
+            <p>Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: MARIN Luc - All rights
+                reserved </p>
+        </footer>
+    </body>
+</html>
